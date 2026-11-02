@@ -143,6 +143,7 @@ public class CentralJugadores {
 			id = "JUG-" + (++contador);
 		} while (getJugadorPorId(id) != null
         || ID_ANONIMO.equals(id));
+		return id;
 	}
 	public Jugador darDeBajaJugador(String idJugador)
         throws ElementoNoEncontradoException {

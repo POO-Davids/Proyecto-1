@@ -83,6 +83,13 @@
         "categoria": "Protección",
         "nombre": "Tobillera",
         "ubicaciones": {"Bodega": 10}
+      },
+      {
+        "tipo": "ArticuloTienda",
+        "precio": 100,
+        "categoria": "Comida",
+        "nombre": "BalonPrueba",
+        "ubicaciones": {"Bodega": 5}
       }
     ]
   },
