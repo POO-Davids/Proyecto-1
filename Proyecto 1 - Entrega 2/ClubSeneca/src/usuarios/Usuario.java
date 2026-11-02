@@ -48,7 +48,8 @@ public abstract class Usuario {
 
 	public Boolean tieneBebidaCaliente() {
 		for (Bebida bebida : bebidasSinConsumir) {
-			if (bebida.getEsCaliente()) {
+			if (bebida != null
+        		&& Boolean.TRUE.equals(bebida.getEsCaliente())) {
 				return true;
 			}
 		}

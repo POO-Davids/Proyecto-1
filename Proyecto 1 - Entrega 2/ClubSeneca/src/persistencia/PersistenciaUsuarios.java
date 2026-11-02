@@ -3,7 +3,7 @@ package persistencia;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
+import java.time.LocalDate;
 import controladores.CentralClubSeneca;
 import excepciones.PersistenciaException;
 import tiendas.Bebida;
@@ -70,9 +70,27 @@ public class PersistenciaUsuarios extends Persistencia {
 					.put("codigoDescuentoDado", socio.getCodigoDescuentoDado() == null ? "" : socio.getCodigoDescuentoDado())
 					.put("puntosFidelidad", socio.getPuntosFidelidad()).put("jugandoComo", textosAJSON(socio.getJugandoComo()));
 		} else if (usuario instanceof Empleado empleado) {
-			json.put("codigoDescuentoTienda", empleado.getCodigoDescuentoTienda()).put("turno", horasAJSON(empleado.getTurno()))
-					.put("puntosFidelidad", empleado.getPuntosFidelidad())
-					.put("sociosConCodigo", textosAJSON(empleado.getSociosConCodigo()));
+
+			json.put("codigoDescuentoTienda",
+					empleado.getCodigoDescuentoTienda())
+				.put("turno", horasAJSON(empleado.getTurno()))
+				.put("puntosFidelidad", empleado.getPuntosFidelidad())
+				.put("sociosConCodigo",
+					textosAJSON(empleado.getSociosConCodigo()));
+
+			JSONArray turnosPorFecha = new JSONArray();
+
+			for (LocalDate fecha
+					: empleado.getTurnosPorFecha().keySet()) {
+
+				turnosPorFecha.put(
+					new JSONObject()
+						.put("fecha", fecha.toString())
+						.put("turno",
+							horasAJSON(empleado.getTurno(fecha))));
+			}
+
+			json.put("turnosPorFecha", turnosPorFecha);
 		}
 		return json;
 	}
@@ -97,6 +115,25 @@ public class PersistenciaUsuarios extends Persistencia {
 			Empleado empleado = json.getString("tipo").equals("Entrenador") ? new Entrenador(username, password, codigo)
 					: new Fisioterapeuta(username, password, codigo);
 			empleado.setTurno(null, horasDesdeJSON(json.getJSONArray("turno")));
+			JSONArray turnosPorFecha =
+			json.optJSONArray("turnosPorFecha");
+
+			if (turnosPorFecha != null) {
+
+				for (int i = 0; i < turnosPorFecha.length(); i++) {
+
+					JSONObject turnoGuardado =
+							turnosPorFecha.getJSONObject(i);
+
+					LocalDate fecha = LocalDate.parse(
+							turnoGuardado.getString("fecha"));
+
+					Boolean[] horas = horasDesdeJSON(
+							turnoGuardado.getJSONArray("turno"));
+
+					empleado.setTurno(fecha, horas);
+				}
+			}
 			empleado.setPuntosFidelidad(json.getFloat("puntosFidelidad"));
 			for (String socio : textosDesdeJSON(json.getJSONArray("sociosConCodigo"))) {
 				empleado.agregarSocioConCodigo(socio);
@@ -113,13 +150,37 @@ public class PersistenciaUsuarios extends Persistencia {
 		return usuario;
 	}
 
-	private JSONObject solicitudAJSON(SolicitudCambioTurno solicitud) {
-		return new JSONObject().put("idSolicitud", solicitud.getIdSolicitud()).put("empleado", solicitud.getEmpleado().getUsername())
-				.put("turno", horasAJSON(solicitud.getTurno())).put("estado", solicitud.getEstado());
+	private JSONObject solicitudAJSON(
+			SolicitudCambioTurno solicitud) {
+
+		return new JSONObject()
+				.put("idSolicitud", solicitud.getIdSolicitud())
+				.put("empleado",
+					solicitud.getEmpleado().getUsername())
+				.put("fecha",
+					solicitud.getFecha() == null
+						? JSONObject.NULL
+						: solicitud.getFecha().toString())
+				.put("turno", horasAJSON(solicitud.getTurno()))
+				.put("estado", solicitud.getEstado());
 	}
 
-	private SolicitudCambioTurno solicitudDesdeJSON(JSONObject json, CentralClubSeneca club) {
-		return new SolicitudCambioTurno(json.getString("idSolicitud"), (Empleado) club.getUsuarios().getUsuario(json.getString("empleado")),
-				horasDesdeJSON(json.getJSONArray("turno")), json.getString("estado"));
+	private SolicitudCambioTurno solicitudDesdeJSON(
+			JSONObject json,
+			CentralClubSeneca club) {
+
+		String textoFecha = json.optString("fecha", "");
+
+		LocalDate fecha = textoFecha.isBlank()
+				? null
+				: LocalDate.parse(textoFecha);
+
+		return new SolicitudCambioTurno(
+				json.getString("idSolicitud"),
+				(Empleado) club.getUsuarios().getUsuario(
+						json.getString("empleado")),
+				fecha,
+				horasDesdeJSON(json.getJSONArray("turno")),
+				json.getString("estado"));
 	}
 }

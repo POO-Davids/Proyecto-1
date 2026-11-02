@@ -25,6 +25,17 @@ public class CentralUsuarios {
 	}
 
 	public void agregarUsuario(Usuario usuario) {
+
+		if (usuario == null || usuario.getUsername() == null
+				|| usuario.getUsername().isBlank()) {
+			throw new IllegalArgumentException("Usuario invalido");
+		}
+
+		if (usuarios.containsKey(usuario.getUsername())) {
+			throw new IllegalArgumentException(
+					"El username ya esta registrado");
+		}
+
 		usuarios.put(usuario.getUsername(), usuario);
 	}
 
@@ -61,13 +72,39 @@ public class CentralUsuarios {
 		getEmpleado(empleadoUsername).setTurno(fecha, turno);
 	}
 
-	public void solicitarCambioTurno(String empleadoUsername, LocalDate fecha, Boolean[] horario)
-			throws ElementoNoEncontradoException, ValorInvalidoException {
+	public void solicitarCambioTurno(
+			String empleadoUsername,
+			LocalDate fecha,
+			Boolean[] horario)
+			throws ElementoNoEncontradoException,
+				ValorInvalidoException {
+
 		Empleado empleado = getEmpleado(empleadoUsername);
-		if (!centralCambioTurno.interfazCambioTurno(horario)) {
-			throw new ValorInvalidoException("El turno debe tener 24 horas");
+
+		if (fecha == null) {
+			throw new ValorInvalidoException(
+					"Debe indicar la fecha del cambio");
 		}
-		solicitudesCambioTurno.add(new SolicitudCambioTurno(generarId(), empleado, horario));
+
+		for (SolicitudCambioTurno solicitud : solicitudesCambioTurno) {
+
+			if (solicitud.getEmpleado().getUsername()
+					.equals(empleadoUsername)
+					&& "pendiente".equals(solicitud.getEstado())) {
+
+				throw new ValorInvalidoException(
+						"Ya existe una solicitud pendiente");
+			}
+		}
+
+		if (!centralCambioTurno.interfazCambioTurno(horario)) {
+			throw new ValorInvalidoException(
+					"El turno debe tener 24 horas");
+		}
+
+		solicitudesCambioTurno.add(
+				new SolicitudCambioTurno(
+						generarId(), empleado, fecha, horario));
 	}
 
 	public List<SolicitudCambioTurno> getSolicitudesPendientes() {
@@ -88,20 +125,53 @@ public class CentralUsuarios {
 		solicitudesCambioTurno.add(solicitud);
 	}
 
-	public Boolean aprobarSolicitudCambioTurno(String idSolicitud, Boolean[] horarioAtencion)
-			throws ElementoNoEncontradoException, CoberturaTurnosException {
-		SolicitudCambioTurno solicitud = getSolicitudPendiente(idSolicitud);
+	public Boolean aprobarSolicitudCambioTurno(
+			String idSolicitud,
+			Boolean[] horarioAtencion)
+			throws ElementoNoEncontradoException,
+				CoberturaTurnosException {
+
+		SolicitudCambioTurno solicitud =
+				getSolicitudPendiente(idSolicitud);
+
 		Empleado empleado = solicitud.getEmpleado();
-		Boolean[] turnoAnterior = empleado.getTurno();
-		empleado.setTurno(null, solicitud.getTurno());
-		boolean cubre = centralCambioTurno.verificarCobertura(null, getEmpleados("Todos"), horarioAtencion);
-		empleado.setTurno(null, turnoAnterior);
+		LocalDate fecha = solicitud.getFecha();
+
+		Boolean[] turnoAnterior = empleado.getTurno(fecha);
+
+		boolean teniaTurnoPropio =
+				fecha != null
+				&& empleado.getTurnosPorFecha().containsKey(fecha);
+
+		boolean cubre;
+
+		try {
+
+			empleado.setTurno(fecha, solicitud.getTurno());
+
+			cubre = centralCambioTurno.verificarCobertura(
+					fecha, getEmpleados("Todos"), horarioAtencion);
+
+		} finally {
+
+			if (fecha != null && !teniaTurnoPropio) {
+				empleado.quitarTurnoDeFecha(fecha);
+
+			} else {
+				empleado.setTurno(fecha, turnoAnterior);
+			}
+		}
+
 		if (!cubre) {
 			solicitud.rechazar();
-			throw new CoberturaTurnosException("El cambio de turno deja horas sin la cobertura mínima");
+
+			throw new CoberturaTurnosException(
+					"El cambio de turno deja horas sin cobertura");
 		}
+
 		solicitud.aprobar();
 		solicitud.cambiarTurno();
+
 		return true;
 	}
 
@@ -119,23 +189,48 @@ public class CentralUsuarios {
 	}
 
 	public void acumularPuntos(String username, float puntos) {
+
+		if (!Float.isFinite(puntos) || puntos < 0) {
+			throw new IllegalArgumentException(
+					"Los puntos a acumular deben ser validos");
+		}
+
 		Usuario usuario = getUsuario(username);
+
 		if (usuario instanceof Socio socio) {
-			socio.setPuntosFidelidad(socio.getPuntosFidelidad() + puntos);
+			socio.setPuntosFidelidad(
+					socio.getPuntosFidelidad() + puntos);
+
 		} else if (usuario instanceof Empleado empleado) {
-			empleado.setPuntosFidelidad(empleado.getPuntosFidelidad() + puntos);
+			empleado.setPuntosFidelidad(
+					empleado.getPuntosFidelidad() + puntos);
 		}
 	}
 
-	public void redimirPuntos(String username, float puntos) throws PuntosInsuficientesException {
-		Usuario usuario = getUsuario(username);
-		float saldo = usuario instanceof Socio socio ? socio.getPuntosFidelidad()
-				: usuario instanceof Empleado empleado ? empleado.getPuntosFidelidad() : 0;
-		if (saldo < puntos) {
-			throw new PuntosInsuficientesException("Solo tiene " + saldo + " puntos");
+	public void redimirPuntos(String username, float puntos)
+			throws PuntosInsuficientesException {
+
+		if (!Float.isFinite(puntos) || puntos <= 0) {
+			throw new IllegalArgumentException(
+					"Los puntos a redimir deben ser positivos");
 		}
+
+		Usuario usuario = getUsuario(username);
+
+		float saldo = usuario instanceof Socio socio
+				? socio.getPuntosFidelidad()
+				: usuario instanceof Empleado empleado
+						? empleado.getPuntosFidelidad()
+						: 0;
+
+		if (saldo < puntos) {
+			throw new PuntosInsuficientesException(
+					"Solo tiene " + saldo + " puntos");
+		}
+
 		if (usuario instanceof Socio socio) {
 			socio.setPuntosFidelidad(saldo - puntos);
+
 		} else if (usuario instanceof Empleado empleado) {
 			empleado.setPuntosFidelidad(saldo - puntos);
 		}

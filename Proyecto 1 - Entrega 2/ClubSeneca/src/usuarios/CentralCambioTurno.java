@@ -24,25 +24,54 @@ public class CentralCambioTurno {
 		return true;
 	}
 
-	public Boolean verificarCobertura(LocalDate fecha, List<Empleado> empleados, Boolean[] horarioAtencion) {
+	public Boolean verificarCobertura(
+        LocalDate fecha,
+        List<Empleado> empleados,
+        Boolean[] horarioAtencion) {
+
+		if (empleados == null
+				|| !verificarValidezCambioTurno(horarioAtencion)) {
+			return false;
+		}
+
 		for (int hora = 0; hora < horarioAtencion.length; hora++) {
+
 			if (horarioAtencion[hora]) {
-				if (contarEmpleadosEnHora("Entrenador", fecha, hora, empleados) < minimoEntrenadores
-						|| contarEmpleadosEnHora("Fisioterapeuta", fecha, hora, empleados) < minimoFisioterapeutas) {
+
+				if (contarEmpleadosEnHora(
+						"Entrenador", fecha, hora, empleados)
+						< minimoEntrenadores
+						||
+						contarEmpleadosEnHora(
+						"Fisioterapeuta", fecha, hora, empleados)
+						< minimoFisioterapeutas) {
+
 					return false;
 				}
 			}
 		}
+
 		return true;
 	}
 
-	private int contarEmpleadosEnHora(String tipo, LocalDate fecha, int hora, List<Empleado> empleados) {
+	private int contarEmpleadosEnHora(
+			String tipo,
+			LocalDate fecha,
+			int hora,
+			List<Empleado> empleados) {
+
 		int contador = 0;
+
 		for (Empleado empleado : empleados) {
-			if (empleado.getTipo().equals(tipo) && empleado.getTurno()[hora]) {
+
+			if (empleado.getTipo().equals(tipo)
+					&& Boolean.TRUE.equals(
+						empleado.getTurno(fecha)[hora])) {
+
 				contador++;
 			}
 		}
+
 		return contador;
 	}
 }

@@ -47,7 +47,21 @@ public class Socio extends Usuario {
 	}
 
 	public void agregarJugador(String idJugador) {
-		jugandoComo = Arrays.copyOf(jugandoComo, jugandoComo.length + 1);
+
+		if (idJugador == null || idJugador.isBlank()) {
+			throw new IllegalArgumentException(
+					"El ID del jugador no es valido");
+		}
+
+		for (String id : jugandoComo) {
+			if (idJugador.equals(id)) {
+				return;
+			}
+		}
+
+		jugandoComo = Arrays.copyOf(
+				jugandoComo, jugandoComo.length + 1);
+
 		jugandoComo[jugandoComo.length - 1] = idJugador;
 	}
 

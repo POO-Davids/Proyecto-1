@@ -39,21 +39,50 @@ public abstract class Articulo {
 	}
 
 	public void abastecer(int cantidad) {
-		ubicaciones.merge(UBICACION_BODEGA, cantidad, Integer::sum);
+
+		if (cantidad <= 0) {
+			throw new IllegalArgumentException(
+					"La cantidad debe ser positiva");
+		}
+
+		ubicaciones.merge(
+				UBICACION_BODEGA, cantidad, Integer::sum);
+
 		disponibilidad += cantidad;
 	}
 
-	public void descontar(int cantidad) throws InventarioInsuficienteException {
+	public void descontar(int cantidad)
+			throws InventarioInsuficienteException {
+
+		if (cantidad <= 0) {
+			throw new IllegalArgumentException(
+					"La cantidad debe ser positiva");
+		}
+
 		if (cantidad > disponibilidad) {
-			throw new InventarioInsuficienteException("Solo hay " + disponibilidad + " unidades de " + nombre);
+			throw new InventarioInsuficienteException(
+					"Inventario insuficiente de " + nombre);
 		}
-		disponibilidad -= cantidad;
+
 		int pendiente = cantidad;
-		for (Map.Entry<String, Integer> ubicacion : ubicaciones.entrySet()) {
-			int sacar = Math.min(pendiente, ubicacion.getValue());
-			ubicacion.setValue(ubicacion.getValue() - sacar);
+
+		for (Map.Entry<String, Integer> ubicacion
+				: ubicaciones.entrySet()) {
+
+			int sacar = Math.min(
+					pendiente, ubicacion.getValue());
+
+			ubicacion.setValue(
+					ubicacion.getValue() - sacar);
+
 			pendiente -= sacar;
+
+			if (pendiente == 0) {
+				break;
+			}
 		}
+
+		disponibilidad -= cantidad;
 	}
 
 	public int getUnidadesEn(String ubicacion) {

@@ -99,6 +99,23 @@ public class Tienda {
 	public VentaTienda registrarVenta(Usuario comprador, String[] nombres, int[] cantidades, String codigo, float puntosRedimidos)
 			throws ElementoNoEncontradoException, InventarioInsuficienteException, CodigoDescuentoInvalidoException,
 			ValorInvalidoException {
+		if (comprador == null || nombres == null
+					|| cantidades == null || nombres.length == 0
+					|| nombres.length != cantidades.length) {
+
+				throw new ValorInvalidoException(
+						"Los datos de la compra no son validos");
+			}
+
+		for (int i = 0; i < nombres.length; i++) {
+
+				if (nombres[i] == null || nombres[i].isBlank()
+						|| cantidades[i] <= 0) {
+
+					throw new ValorInvalidoException(
+							"Nombre o cantidad de articulo no valida");
+				}
+			}
 		List<ArticuloTienda> articulos = new ArrayList<>();
 		float subtotal = 0;
 		for (int i = 0; i < nombres.length; i++) {

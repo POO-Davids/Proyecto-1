@@ -36,7 +36,7 @@ public class ControladorEntrenador extends ControladorEmpleado {
 		Entrenador entrenador = (Entrenador) usuario;
 		for (int i = 0; i < numeroHoras; i++) {
 			horas[i] = horaInicio + i;
-			if (!entrenador.getTurno()[horas[i]]) {
+			if (!entrenador.getTurno(fecha)[horas[i]]) {
 				throw new FueraDeTurnoException("La hora " + horas[i] + " está fuera del turno del entrenador");
 			}
 		}

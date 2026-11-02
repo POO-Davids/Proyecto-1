@@ -1,48 +1,68 @@
 package usuarios;
 
+import java.time.LocalDate;
+import java.util.Arrays;
+
 public class SolicitudCambioTurno {
 
-	private String idSolicitud;
-	private Boolean[] turno;
-	private String estado;
-	private Empleado empleado;
+    private String idSolicitud;
+    private LocalDate fecha;
+    private Boolean[] turno;
+    private String estado;
+    private Empleado empleado;
 
-	public SolicitudCambioTurno(String idSolicitud, Empleado empleado, Boolean[] turno) {
-		this(idSolicitud, empleado, turno, "pendiente");
-	}
+    public SolicitudCambioTurno(
+            String idSolicitud,
+            Empleado empleado,
+            LocalDate fecha,
+            Boolean[] turno) {
 
-	public SolicitudCambioTurno(String idSolicitud, Empleado empleado, Boolean[] turno, String estado) {
-		this.idSolicitud = idSolicitud;
-		this.empleado = empleado;
-		this.turno = turno;
-		this.estado = estado;
-	}
+        this(idSolicitud, empleado, fecha, turno, "pendiente");
+    }
 
-	public void cambiarTurno() {
-		empleado.setTurno(null, turno);
-	}
+    public SolicitudCambioTurno(
+            String idSolicitud,
+            Empleado empleado,
+            LocalDate fecha,
+            Boolean[] turno,
+            String estado) {
 
-	public String getIdSolicitud() {
-		return idSolicitud;
-	}
+        this.idSolicitud = idSolicitud;
+        this.empleado = empleado;
+        this.fecha = fecha;
+        this.turno = Arrays.copyOf(turno, turno.length);
+        this.estado = estado;
+    }
 
-	public Empleado getEmpleado() {
-		return empleado;
-	}
+    public void cambiarTurno() {
+        empleado.setTurno(fecha, turno);
+    }
 
-	public Boolean[] getTurno() {
-		return turno;
-	}
+    public String getIdSolicitud() {
+        return idSolicitud;
+    }
 
-	public String getEstado() {
-		return estado;
-	}
+    public LocalDate getFecha() {
+        return fecha;
+    }
 
-	public void aprobar() {
-		estado = "aprobada";
-	}
+    public Empleado getEmpleado() {
+        return empleado;
+    }
 
-	public void rechazar() {
-		estado = "rechazada";
-	}
+    public Boolean[] getTurno() {
+        return Arrays.copyOf(turno, turno.length);
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void aprobar() {
+        estado = "aprobada";
+    }
+
+    public void rechazar() {
+        estado = "rechazada";
+    }
 }

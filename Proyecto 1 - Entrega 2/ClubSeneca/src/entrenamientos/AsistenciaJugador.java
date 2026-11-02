@@ -32,6 +32,12 @@ public class AsistenciaJugador {
 	}
 
 	public void setEvaluacion(int evaluacion) {
+
+		if (evaluacion < 0 || evaluacion > 5) {
+			throw new IllegalArgumentException(
+					"La evaluacion debe estar entre 1 y 5, o ser 0");
+		}
+
 		this.evaluacion = evaluacion;
 	}
 

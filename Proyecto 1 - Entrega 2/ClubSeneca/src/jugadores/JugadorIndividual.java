@@ -51,9 +51,29 @@ public class JugadorIndividual extends Jugador {
 	}
 
 	public Boolean esNivelCompatible(JugadorIndividual otro) {
-		if (esEntrenador || otro.getEsEntrenador()) {
+
+		if (otro == null || nivel == null || disciplina == null
+				|| otro.getNivel() == null
+				|| otro.getDisciplina() == null) {
+			return false;
+		}
+
+		if (!disciplina.equalsIgnoreCase(otro.getDisciplina())) {
+			return false;
+		}
+
+		int nivel1 = NIVELES.indexOf(nivel);
+		int nivel2 = NIVELES.indexOf(otro.getNivel());
+
+		if (nivel1 == -1 || nivel2 == -1) {
+			return false;
+		}
+
+		if (Boolean.TRUE.equals(esEntrenador)
+				|| Boolean.TRUE.equals(otro.getEsEntrenador())) {
 			return true;
 		}
-		return Math.abs(NIVELES.indexOf(nivel) - NIVELES.indexOf(otro.getNivel())) <= 1;
+
+		return Math.abs(nivel1 - nivel2) <= 1;
 	}
 }

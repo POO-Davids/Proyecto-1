@@ -65,6 +65,12 @@ public abstract class Jugador {
 	}
 
 	public void suspender(int partidos) {
+
+    if (partidos <= 0) {
+        throw new IllegalArgumentException(
+                "Los partidos de suspension deben ser positivos");
+    }
+
 		partidosSuspendido += partidos;
 	}
 

@@ -1,8 +1,7 @@
 package jugadores;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.List;
 
 import equipos.Equipo;
@@ -19,14 +18,12 @@ public class CentralJugadores {
 
 	public static final String ID_ANONIMO = "JUG-ANONIMO";
 
-	private String[] idJugadores;
-	private LinkedHashMap<String, Jugador> jugadores;
+	private HashMap<String, HashMap<String, Jugador>> jugadores;
 	private Jugador anonimo;
 	private int contador;
 
 	public CentralJugadores() {
-		idJugadores = new String[0];
-		jugadores = new LinkedHashMap<>();
+		jugadores = new HashMap<>();
 	}
 
 	public Jugador inscribirJugadorIndividual(Usuario usuario, String disciplina, String nivel, float elo)
@@ -53,14 +50,7 @@ public class CentralJugadores {
 		return jugador;
 	}
 
-	public Jugador darDeBajaJugador(String idJugador) throws ElementoNoEncontradoException {
-		Jugador jugador = jugadores.remove(idJugador);
-		if (jugador == null) {
-			throw new ElementoNoEncontradoException("No existe el jugador " + idJugador);
-		}
-		idJugadores = Arrays.stream(idJugadores).filter(id -> !id.equals(idJugador)).toArray(String[]::new);
-		return jugador;
-	}
+	
 
 	private Boolean verificarValidezInscribirJugador(Equipo equipo, String deporte, Usuario usuario)
 			throws EquipoPorDeporteException, CategoriaEdadException, CupoEquipoExcedidoException {
@@ -92,36 +82,6 @@ public class CentralJugadores {
 		return edad < Integer.parseInt(categoria.replaceAll("\\D", ""));
 	}
 
-	public Jugador getJugadorPorId(String idJugador) {
-		if (ID_ANONIMO.equals(idJugador)) {
-			return getJugadorAnonimo();
-		}
-		return jugadores.get(idJugador);
-	}
-
-	public List<Jugador> getJugadores() {
-		return new ArrayList<>(jugadores.values());
-	}
-
-	public String[] getIdJugadores() {
-		return idJugadores;
-	}
-
-	public void agregarJugador(Jugador jugador) {
-		jugadores.put(jugador.getIdJugador(), jugador);
-		idJugadores = Arrays.copyOf(idJugadores, idJugadores.length + 1);
-		idJugadores[idJugadores.length - 1] = jugador.getIdJugador();
-	}
-
-	public List<Jugador> getJugadoresDeUsuario(String username) {
-		List<Jugador> lista = new ArrayList<>();
-		for (Jugador jugador : jugadores.values()) {
-			if (jugador.getUsuario().getUsername().equals(username)) {
-				lista.add(jugador);
-			}
-		}
-		return lista;
-	}
 
 	public JugadorIndividual getJugadorIndividual(String username, String disciplina) {
 		for (Jugador jugador : getJugadoresDeUsuario(username)) {
@@ -181,7 +141,112 @@ public class CentralJugadores {
 		String id;
 		do {
 			id = "JUG-" + (++contador);
-		} while (jugadores.containsKey(id));
-		return id;
+		} while (getJugadorPorId(id) != null
+        || ID_ANONIMO.equals(id));
 	}
+	public Jugador darDeBajaJugador(String idJugador)
+        throws ElementoNoEncontradoException {
+
+    Jugador jugador = getJugadorPorId(idJugador);
+
+    if (jugador == null) {
+        throw new ElementoNoEncontradoException(
+                "No existe el jugador " + idJugador);
+    }
+
+    String username = jugador.getUsuario().getUsername();
+
+    HashMap<String, Jugador> delUsuario =
+            jugadores.get(username);
+
+    delUsuario.remove(idJugador);
+
+    if (delUsuario.isEmpty()) {
+        jugadores.remove(username);
+    }
+
+    return jugador;
+}
+
+public Jugador getJugadorPorId(String idJugador) {
+
+    if (ID_ANONIMO.equals(idJugador)) {
+        return getJugadorAnonimo();
+    }
+
+    for (HashMap<String, Jugador> delUsuario
+            : jugadores.values()) {
+
+        Jugador encontrado = delUsuario.get(idJugador);
+
+        if (encontrado != null) {
+            return encontrado;
+        }
+    }
+
+    return null;
+}
+
+	public List<Jugador> getJugadores() {
+
+		List<Jugador> resultado = new ArrayList<>();
+
+		for (HashMap<String, Jugador> delUsuario
+				: jugadores.values()) {
+
+			resultado.addAll(delUsuario.values());
+		}
+
+		return resultado;
+	}
+
+	public String[] getIdJugadores() {
+
+		List<String> ids = new ArrayList<>();
+
+		for (Jugador jugador : getJugadores()) {
+			ids.add(jugador.getIdJugador());
+		}
+
+		return ids.toArray(new String[0]);
+	}
+
+	public void agregarJugador(Jugador jugador) {
+
+		if (jugador == null || jugador.getUsuario() == null
+				|| jugador.getUsuario().getUsername() == null
+				|| jugador.getIdJugador() == null
+				|| jugador.getIdJugador().isBlank()) {
+
+			throw new IllegalArgumentException(
+					"Jugador sin ID o usuario valido");
+		}
+
+		if (ID_ANONIMO.equals(jugador.getIdJugador())
+				|| getJugadorPorId(jugador.getIdJugador()) != null) {
+
+			throw new IllegalArgumentException(
+					"ID de jugador repetido: "
+					+ jugador.getIdJugador());
+		}
+
+		String username = jugador.getUsuario().getUsername();
+
+		jugadores.computeIfAbsent(
+				username, k -> new HashMap<>())
+				.put(jugador.getIdJugador(), jugador);
+	}
+
+	public List<Jugador> getJugadoresDeUsuario(String username) {
+
+		HashMap<String, Jugador> delUsuario =
+				jugadores.get(username);
+
+		if (delUsuario == null) {
+			return new ArrayList<>();
+		}
+
+		return new ArrayList<>(delUsuario.values());
+}
+	
 }

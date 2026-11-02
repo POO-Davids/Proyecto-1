@@ -69,6 +69,9 @@ public class Instalacion {
 	}
 
 	public Boolean estaDisponible(LocalDate fecha, int[] horas) {
+		if (fecha == null || horas == null || horas.length == 0) {
+			return false;
+		}
 		Boolean[] libres = disponibilidadDe(fecha);
 		for (int hora : horas) {
 			if (hora < 0 || hora > 23 || !libres[hora]) {
