@@ -2,7 +2,7 @@ package competencia;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.List;
 
 import excepciones.ElementoDuplicadoException;
@@ -12,11 +12,11 @@ import excepciones.RequisitosInscripcionException;
 public class FaseGrupos {
 
 	private int maximoEnGrupo;
-	private LinkedHashMap<String, Grupo> grupos;
+	private HashMap<String, Grupo> grupos;
 
 	public FaseGrupos(int maximoEnGrupo) {
 		this.maximoEnGrupo = maximoEnGrupo;
-		this.grupos = new LinkedHashMap<>();
+		this.grupos = new HashMap<>();
 	}
 
 	public void crearGrupo(String nombre) throws ElementoDuplicadoException {
