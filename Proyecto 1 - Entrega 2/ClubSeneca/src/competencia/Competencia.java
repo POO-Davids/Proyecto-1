@@ -3,8 +3,8 @@ package competencia;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.LinkedHashMap;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map	;
 
 import equipos.Equipo;
 import estadisticas.Estadistica;
@@ -26,9 +26,9 @@ public abstract class Competencia {
 	protected Boolean cerrado;
 	protected int nominaMinima;
 	protected int equivalenciaSuspension;
-	protected LinkedHashMap<String, EquipoCompetencia> equiposParticipantes;
+	protected Map<String, EquipoCompetencia> equiposParticipantes;
 	protected List<PartidoCompetencia> partidos;
-	protected LinkedHashMap<String, Estadistica> estadisticasAcumuladas;
+	protected Map<String, Estadistica> estadisticasAcumuladas;
 
 	public Competencia(String idCompetencia, String nombre, String entidad, String temporada, String deporte, String categoria,
 			String formato, int nominaMinima, int equivalenciaSuspension) {
@@ -42,9 +42,9 @@ public abstract class Competencia {
 		this.nominaMinima = nominaMinima;
 		this.equivalenciaSuspension = equivalenciaSuspension;
 		this.cerrado = false;
-		this.equiposParticipantes = new LinkedHashMap<>();
+		this.equiposParticipantes = new HashMap<>();
 		this.partidos = new ArrayList<>();
-		this.estadisticasAcumuladas = new LinkedHashMap<>();
+		this.estadisticasAcumuladas = new HashMap<>();
 	}
 
 	public void inscribirEquipo(Equipo equipo, String[] nomina) throws RequisitosInscripcionException, ElementoDuplicadoException {
