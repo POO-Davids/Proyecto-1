@@ -1,0 +1,92 @@
+{"competencias": [
+  {
+    "tipo": "CompetenciaASCUN",
+    "deporte": "Fútbol",
+    "categoria": "Mayores",
+    "formato": "Grupos y eliminación directa",
+    "nominaMinima": 12,
+    "equivalenciaSuspension": 2,
+    "grupos": [{
+      "nombre": "A",
+      "equipos": [
+        "EQ-3",
+        "Universidad Nacional",
+        "Javeriana",
+        "Rosario"
+      ]
+    }],
+    "nombre": "ASCUN Fútbol 2026",
+    "cerrado": false,
+    "eliminados": [],
+    "entidad": "ASCUN",
+    "temporada": "2026-2",
+    "restantes": [],
+    "idCompetencia": "COMP-1",
+    "equipos": [
+      {
+        "equipoId": "EQ-3",
+        "tipo": "EquipoPropioCompetencia",
+        "deporte": "Fútbol",
+        "categoria": "Mayores",
+        "inscritos": [
+          "JUG-17",
+          "JUG-18",
+          "JUG-19",
+          "JUG-20",
+          "JUG-21",
+          "JUG-22",
+          "JUG-23",
+          "JUG-24",
+          "JUG-25",
+          "JUG-26",
+          "JUG-27",
+          "JUG-28",
+          "JUG-29"
+        ],
+        "puntos": 3,
+        "nombre": "Fútbol Mayores"
+      },
+      {
+        "jugadorMasPuntos": "",
+        "tipo": "EquipoAfueraCompetencia",
+        "puntosJugadorMasPuntos": 0,
+        "puntos": 0,
+        "numHabilitados": 0,
+        "nombre": "Universidad Nacional",
+        "numInscritos": 0
+      },
+      {
+        "jugadorMasPuntos": "",
+        "tipo": "EquipoAfueraCompetencia",
+        "puntosJugadorMasPuntos": 0,
+        "puntos": 0,
+        "numHabilitados": 0,
+        "nombre": "Javeriana",
+        "numInscritos": 0
+      },
+      {
+        "jugadorMasPuntos": "",
+        "tipo": "EquipoAfueraCompetencia",
+        "puntosJugadorMasPuntos": 0,
+        "puntos": 0,
+        "numHabilitados": 0,
+        "nombre": "Rosario",
+        "numInscritos": 0
+      }
+    ]
+  },
+  {
+    "tipo": "CompetenciaCerros",
+    "deporte": "Baloncesto",
+    "cerrado": false,
+    "entidad": "Torneo de los Cerros",
+    "temporada": "2026-2",
+    "categoria": "Mayores",
+    "formato": "Liga",
+    "nominaMinima": 5,
+    "equivalenciaSuspension": 2,
+    "nombre": "Torneo de los Cerros 2026",
+    "idCompetencia": "COMP-2",
+    "equipos": []
+  }
+]}

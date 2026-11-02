@@ -1,0 +1,656 @@
+{"jugadores": [
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-1",
+      "goles": 2,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-1",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-1",
+    "deporte": "Fútbol",
+    "camiseta": 1,
+    "usuario": "a1",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-2",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-1",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-2",
+    "deporte": "Fútbol",
+    "camiseta": 2,
+    "usuario": "a2",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-3",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-1",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-3",
+    "deporte": "Fútbol",
+    "camiseta": 3,
+    "usuario": "a3",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-4",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-1",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-4",
+    "deporte": "Fútbol",
+    "camiseta": 4,
+    "usuario": "a4",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-5",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-1",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-5",
+    "deporte": "Fútbol",
+    "camiseta": 5,
+    "usuario": "a5",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-6",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-1",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-6",
+    "deporte": "Fútbol",
+    "camiseta": 6,
+    "usuario": "a6",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-7",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-1",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-7",
+    "deporte": "Fútbol",
+    "camiseta": 7,
+    "usuario": "a7",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-8",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-1",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-8",
+    "deporte": "Fútbol",
+    "camiseta": 8,
+    "usuario": "a8",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-9",
+      "goles": 1,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-2",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-9",
+    "deporte": "Fútbol",
+    "camiseta": 1,
+    "usuario": "b1",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-10",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-2",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 1,
+    "idJugador": "JUG-10",
+    "deporte": "Fútbol",
+    "camiseta": 2,
+    "usuario": "b2",
+    "amonestaciones": 1
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-11",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-2",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-11",
+    "deporte": "Fútbol",
+    "camiseta": 3,
+    "usuario": "b3",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-12",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-2",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-12",
+    "deporte": "Fútbol",
+    "camiseta": 4,
+    "usuario": "b4",
+    "amonestaciones": 1
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-13",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-2",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-13",
+    "deporte": "Fútbol",
+    "camiseta": 5,
+    "usuario": "b5",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-14",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-2",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-14",
+    "deporte": "Fútbol",
+    "camiseta": 6,
+    "usuario": "b6",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-15",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-2",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-15",
+    "deporte": "Fútbol",
+    "camiseta": 7,
+    "usuario": "b7",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-16",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-2",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-16",
+    "deporte": "Fútbol",
+    "camiseta": 8,
+    "usuario": "b8",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-17",
+      "goles": 2,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-3",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-17",
+    "deporte": "Fútbol",
+    "camiseta": 1,
+    "usuario": "m1",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-18",
+      "goles": 1,
+      "asistencias": 1
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-3",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-18",
+    "deporte": "Fútbol",
+    "camiseta": 2,
+    "usuario": "m2",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-19",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-3",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-19",
+    "deporte": "Fútbol",
+    "camiseta": 3,
+    "usuario": "m3",
+    "amonestaciones": 1
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-20",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-3",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-20",
+    "deporte": "Fútbol",
+    "camiseta": 4,
+    "usuario": "m4",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-21",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-3",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-21",
+    "deporte": "Fútbol",
+    "camiseta": 5,
+    "usuario": "m5",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-22",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-3",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-22",
+    "deporte": "Fútbol",
+    "camiseta": 6,
+    "usuario": "m6",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-23",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-3",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-23",
+    "deporte": "Fútbol",
+    "camiseta": 7,
+    "usuario": "m7",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-24",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-3",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-24",
+    "deporte": "Fútbol",
+    "camiseta": 8,
+    "usuario": "m8",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-25",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-3",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-25",
+    "deporte": "Fútbol",
+    "camiseta": 9,
+    "usuario": "m9",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-26",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-3",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-26",
+    "deporte": "Fútbol",
+    "camiseta": 10,
+    "usuario": "m10",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-27",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-3",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-27",
+    "deporte": "Fútbol",
+    "camiseta": 11,
+    "usuario": "m11",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-28",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-3",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-28",
+    "deporte": "Fútbol",
+    "camiseta": 12,
+    "usuario": "m12",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-29",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-3",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-29",
+    "deporte": "Fútbol",
+    "camiseta": 13,
+    "usuario": "m13",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaFutbol",
+      "usuarioUsername": "JUG-30",
+      "goles": 0,
+      "asistencias": 0
+    },
+    "posicion": "Jugador",
+    "equipoId": "EQ-3",
+    "tipo": "JugadorConjunto",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-30",
+    "deporte": "Fútbol",
+    "camiseta": 14,
+    "usuario": "m14",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaTenisPadel",
+      "gamesGanados": 12,
+      "usuarioUsername": "JUG-31",
+      "setGanados": 2,
+      "erroresNoForzados": 5,
+      "aces": 3
+    },
+    "tipo": "JugadorIndividual",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-31",
+    "disciplina": "tenis",
+    "elo": 1016,
+    "usuario": "ana",
+    "nivel": "Intermedio",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaTenisPadel",
+      "gamesGanados": 7,
+      "usuarioUsername": "JUG-32",
+      "setGanados": 0,
+      "erroresNoForzados": 9,
+      "aces": 1
+    },
+    "tipo": "JugadorIndividual",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-32",
+    "disciplina": "tenis",
+    "elo": 984,
+    "usuario": "sofia",
+    "nivel": "Intermedio",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaTenisPadel",
+      "gamesGanados": 0,
+      "usuarioUsername": "JUG-33",
+      "setGanados": 0,
+      "erroresNoForzados": 0,
+      "aces": 0
+    },
+    "tipo": "JugadorIndividual",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-33",
+    "disciplina": "padel",
+    "elo": 1100,
+    "usuario": "ana",
+    "nivel": "Intermedio",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaTenisPadel",
+      "gamesGanados": 0,
+      "usuarioUsername": "JUG-34",
+      "setGanados": 0,
+      "erroresNoForzados": 0,
+      "aces": 0
+    },
+    "tipo": "JugadorIndividual",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-34",
+    "disciplina": "tenis",
+    "elo": 1200,
+    "usuario": "luis",
+    "nivel": "Avanzado",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaTenisPadel",
+      "gamesGanados": 0,
+      "usuarioUsername": "JUG-35",
+      "setGanados": 0,
+      "erroresNoForzados": 0,
+      "aces": 0
+    },
+    "tipo": "JugadorIndividual",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-35",
+    "disciplina": "tenis",
+    "elo": 1300,
+    "usuario": "mario",
+    "nivel": "Avanzado",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaTenisPadel",
+      "gamesGanados": 0,
+      "usuarioUsername": "JUG-36",
+      "setGanados": 0,
+      "erroresNoForzados": 0,
+      "aces": 0
+    },
+    "tipo": "JugadorIndividual",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-36",
+    "disciplina": "padel",
+    "elo": 1000,
+    "usuario": "sofia",
+    "nivel": "Intermedio",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaTenisPadel",
+      "gamesGanados": 0,
+      "usuarioUsername": "JUG-37",
+      "setGanados": 0,
+      "erroresNoForzados": 0,
+      "aces": 0
+    },
+    "tipo": "JugadorIndividual",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-37",
+    "disciplina": "padel",
+    "elo": 1000,
+    "usuario": "luis",
+    "nivel": "Intermedio",
+    "amonestaciones": 0
+  },
+  {
+    "estadisticaAcumulada": {
+      "tipo": "EstadisticaTenisPadel",
+      "gamesGanados": 0,
+      "usuarioUsername": "JUG-38",
+      "setGanados": 0,
+      "erroresNoForzados": 0,
+      "aces": 0
+    },
+    "tipo": "JugadorIndividual",
+    "partidosSuspendido": 0,
+    "idJugador": "JUG-38",
+    "disciplina": "padel",
+    "elo": 1150,
+    "usuario": "beto",
+    "nivel": "Avanzado",
+    "amonestaciones": 0
+  }
+]}

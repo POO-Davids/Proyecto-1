@@ -1,0 +1,67 @@
+{"equipos": [
+  {
+    "idEquipo": "EQ-1",
+    "deporte": "Fútbol",
+    "categoria": "Sub-17",
+    "jugadores": [
+      "JUG-1",
+      "JUG-2",
+      "JUG-3",
+      "JUG-4",
+      "JUG-5",
+      "JUG-6",
+      "JUG-7",
+      "JUG-8"
+    ],
+    "nombre": "Fútbol Sub-17 A",
+    "cupo": 20
+  },
+  {
+    "idEquipo": "EQ-2",
+    "deporte": "Fútbol",
+    "categoria": "Sub-17",
+    "jugadores": [
+      "JUG-9",
+      "JUG-10",
+      "JUG-11",
+      "JUG-12",
+      "JUG-13",
+      "JUG-14",
+      "JUG-15",
+      "JUG-16"
+    ],
+    "nombre": "Fútbol Sub-17 B",
+    "cupo": 20
+  },
+  {
+    "idEquipo": "EQ-3",
+    "deporte": "Fútbol",
+    "categoria": "Mayores",
+    "jugadores": [
+      "JUG-17",
+      "JUG-18",
+      "JUG-19",
+      "JUG-20",
+      "JUG-21",
+      "JUG-22",
+      "JUG-23",
+      "JUG-24",
+      "JUG-25",
+      "JUG-26",
+      "JUG-27",
+      "JUG-28",
+      "JUG-29",
+      "JUG-30"
+    ],
+    "nombre": "Fútbol Mayores",
+    "cupo": 25
+  },
+  {
+    "idEquipo": "EQ-4",
+    "deporte": "Baloncesto",
+    "categoria": "Mayores",
+    "jugadores": [],
+    "nombre": "Baloncesto Mayores",
+    "cupo": 12
+  }
+]}

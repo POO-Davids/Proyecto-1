@@ -1,0 +1,141 @@
+{
+  "tienda": {
+    "codigosDescuento": [
+      "ENT-0042",
+      "ENT-0043",
+      "ENT-0044",
+      "FIS-0007",
+      "FIS-0008"
+    ],
+    "ventas": [
+      {
+        "fecha": "2026-11-01",
+        "tipo": "VentaTienda",
+        "cantidades": [1],
+        "iva": 14535,
+        "articulos": ["Balón Básquet"],
+        "comprador": "mario",
+        "puntosRedimidos": 0,
+        "descuentoPorCodigo": 13500,
+        "idVenta": "VT-1"
+      },
+      {
+        "fecha": "2026-11-01",
+        "tipo": "VentaTienda",
+        "cantidades": [1],
+        "iva": 34960,
+        "articulos": ["Raqueta Tenis"],
+        "comprador": "ana",
+        "puntosRedimidos": 0,
+        "descuentoPorCodigo": 16000,
+        "idVenta": "VT-2"
+      }
+    ],
+    "sugerencias": [{
+      "tipo": "ArticuloTienda",
+      "precio": 18000,
+      "categoria": "Protección",
+      "nombre": "Muñequera",
+      "ubicaciones": {}
+    }],
+    "inventario": [
+      {
+        "tipo": "ArticuloTienda",
+        "precio": 80000,
+        "categoria": "Balones",
+        "nombre": "Balón Fútbol",
+        "ubicaciones": {
+          "Bodega": 10,
+          "Vitrina": 2
+        }
+      },
+      {
+        "tipo": "ArticuloTienda",
+        "precio": 200000,
+        "categoria": "Raquetas",
+        "nombre": "Raqueta Tenis",
+        "ubicaciones": {"Bodega": 4}
+      },
+      {
+        "tipo": "ArticuloTienda",
+        "precio": 20000,
+        "categoria": "Pelotas",
+        "nombre": "Pelotas Tenis",
+        "ubicaciones": {"Bodega": 6}
+      },
+      {
+        "tipo": "ArticuloTienda",
+        "precio": 150000,
+        "categoria": "Raquetas",
+        "nombre": "Raqueta Pádel",
+        "ubicaciones": {}
+      },
+      {
+        "tipo": "ArticuloTienda",
+        "precio": 90000,
+        "categoria": "Balones",
+        "nombre": "Balón Básquet",
+        "ubicaciones": {"Bodega": 3}
+      },
+      {
+        "tipo": "ArticuloTienda",
+        "precio": 40000,
+        "categoria": "Protección",
+        "nombre": "Tobillera",
+        "ubicaciones": {"Bodega": 10}
+      }
+    ]
+  },
+  "cafeteria": {
+    "ventas": [{
+      "fecha": "2026-11-01",
+      "tipo": "VentaCafeteria",
+      "cantidades": [
+        1,
+        1
+      ],
+      "iva": 880,
+      "articulos": [
+        "Barra de granola",
+        "Café"
+      ],
+      "comprador": "ana",
+      "propina": 500,
+      "puntosRedimidos": 0,
+      "idVenta": "VC-1"
+    }],
+    "sugerencias": [{
+      "tipo": "Bebida",
+      "precio": 4500,
+      "esCaliente": false,
+      "nombre": "Té frío",
+      "ubicaciones": {}
+    }],
+    "inventario": [
+      {
+        "tipo": "Bebida",
+        "precio": 5000,
+        "esCaliente": true,
+        "nombre": "Café",
+        "ubicaciones": {"Bodega": 29}
+      },
+      {
+        "tipo": "Bebida",
+        "precio": 4000,
+        "esCaliente": false,
+        "nombre": "Limonada",
+        "ubicaciones": {"Bodega": 30}
+      },
+      {
+        "tipo": "Snack",
+        "precio": 6000,
+        "alergenos": [
+          "maní",
+          "gluten"
+        ],
+        "nombre": "Barra de granola",
+        "ubicaciones": {"Bodega": 9}
+      }
+    ]
+  }
+}

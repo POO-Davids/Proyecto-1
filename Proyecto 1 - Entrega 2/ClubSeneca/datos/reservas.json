@@ -1,0 +1,29 @@
+{"reservas": [
+  {
+    "horas": [10],
+    "fecha": "2026-10-17",
+    "reservadoPor": "ana",
+    "instalacion": "INS-1",
+    "idReserva": "RES-1"
+  },
+  {
+    "horas": [
+      9,
+      10
+    ],
+    "fecha": "2026-12-05",
+    "reservadoPor": "ana",
+    "instalacion": "INS-2",
+    "idReserva": "RES-2"
+  },
+  {
+    "horas": [
+      16,
+      17
+    ],
+    "fecha": "2026-10-12",
+    "reservadoPor": "mario",
+    "instalacion": "INS-5",
+    "idReserva": "RES-3"
+  }
+]}

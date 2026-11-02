@@ -1,0 +1,154 @@
+{"partidos": [
+  {
+    "tipo": "PartidoInterno",
+    "deporte": "Fútbol",
+    "puntuacion2": 1,
+    "categoria": "Sub-17",
+    "puntuacion1": 2,
+    "fecha": "2026-10-15T15:00",
+    "estadisticas": [
+      {
+        "tipo": "EstadisticaFutbol",
+        "usuarioUsername": "JUG-1",
+        "goles": 2,
+        "asistencias": 0
+      },
+      {
+        "tipo": "EstadisticaFutbol",
+        "usuarioUsername": "JUG-9",
+        "goles": 1,
+        "asistencias": 0
+      }
+    ],
+    "habilitados2": [
+      "JUG-9",
+      "JUG-10",
+      "JUG-11",
+      "JUG-12",
+      "JUG-13",
+      "JUG-14",
+      "JUG-15"
+    ],
+    "cerrado": true,
+    "habilitados1": [
+      "JUG-1",
+      "JUG-2",
+      "JUG-3",
+      "JUG-4",
+      "JUG-5",
+      "JUG-6",
+      "JUG-7"
+    ],
+    "equipo2": "EQ-2",
+    "equipo1": "EQ-1",
+    "idPartido": "PAR-1",
+    "amonestaciones": [
+      {
+        "tipo": "AmonestacionFutbol",
+        "idJugador": "JUG-10",
+        "amarillas": 2,
+        "rojas": 0
+      },
+      {
+        "tipo": "AmonestacionFutbol",
+        "idJugador": "JUG-12",
+        "amarillas": 1,
+        "rojas": 0
+      }
+    ]
+  },
+  {
+    "tipo": "PartidoCompetencia",
+    "equipoAfuera": "Universidad Nacional",
+    "puntuacionAfuera": 1,
+    "deporte": "Fútbol",
+    "competenciaId": "COMP-1",
+    "puntuacionPropio": 3,
+    "categoria": "Mayores",
+    "equipoPropio": "EQ-3",
+    "escenario": "Estadio Alfonso López",
+    "fecha": "2026-10-20T15:00",
+    "estadisticas": [
+      {
+        "tipo": "EstadisticaFutbol",
+        "usuarioUsername": "JUG-17",
+        "goles": 2,
+        "asistencias": 0
+      },
+      {
+        "tipo": "EstadisticaFutbol",
+        "usuarioUsername": "JUG-18",
+        "goles": 1,
+        "asistencias": 1
+      }
+    ],
+    "cerrado": true,
+    "habilitados": [
+      "JUG-17",
+      "JUG-18",
+      "JUG-19",
+      "JUG-20",
+      "JUG-21",
+      "JUG-22",
+      "JUG-23",
+      "JUG-24",
+      "JUG-25",
+      "JUG-26",
+      "JUG-27"
+    ],
+    "idPartido": "PAR-2",
+    "amonestaciones": [{
+      "tipo": "AmonestacionFutbol",
+      "idJugador": "JUG-19",
+      "amarillas": 1,
+      "rojas": 0
+    }]
+  },
+  {
+    "tipo": "PartidoPractica",
+    "deporte": "tenis",
+    "categoria": "Práctica",
+    "reservador": "ana",
+    "fecha": "2026-10-17T10:00",
+    "estadisticas": [
+      {
+        "tipo": "EstadisticaTenisPadel",
+        "gamesGanados": 12,
+        "usuarioUsername": "JUG-31",
+        "setGanados": 2,
+        "erroresNoForzados": 5,
+        "aces": 3
+      },
+      {
+        "tipo": "EstadisticaTenisPadel",
+        "gamesGanados": 7,
+        "usuarioUsername": "JUG-32",
+        "setGanados": 0,
+        "erroresNoForzados": 9,
+        "aces": 1
+      }
+    ],
+    "cerrado": true,
+    "disciplina": "tenis",
+    "equipo2": ["JUG-32"],
+    "equipo1": ["JUG-31"],
+    "idPartido": "PAR-3",
+    "reserva": "RES-1",
+    "amonestaciones": []
+  },
+  {
+    "tipo": "PartidoPractica",
+    "deporte": "tenis",
+    "categoria": "Práctica",
+    "reservador": "ana",
+    "fecha": "2026-12-05T09:00",
+    "estadisticas": [],
+    "cerrado": false,
+    "disciplina": "tenis",
+    "equipo2": ["JUG-32"],
+    "equipo1": ["JUG-31"],
+    "idPartido": "PAR-4",
+    "reserva": "RES-2",
+    "amonestaciones": []
+  }
+]}

@@ -1,0 +1,42 @@
+{
+  "mensualidades": [
+    {
+      "fecha": "2026-10-20",
+      "socio": "ana",
+      "periodo": "2026-10",
+      "valor": 150000
+    },
+    {
+      "fecha": "2026-10-22",
+      "socio": "sofia",
+      "periodo": "2026-10",
+      "valor": 150000
+    }
+  ],
+  "horarioAtencion": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false
+  ]
+}

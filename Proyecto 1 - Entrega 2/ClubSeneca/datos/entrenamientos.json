@@ -1,0 +1,30 @@
+{"sesiones": [{
+  "fecha": "2026-10-12",
+  "tipo": "SesionEntrenamientoConjunto",
+  "idSesion": "SES-1",
+  "entrenador": "mario",
+  "duracion": 90,
+  "reserva": "RES-3",
+  "horaInicio": 16,
+  "asistencias": [
+    {
+      "jugadorId": "JUG-1",
+      "asistio": "asistió",
+      "evaluacion": 4,
+      "comentario": "Buena definición"
+    },
+    {
+      "jugadorId": "JUG-2",
+      "asistio": "llegó tarde",
+      "evaluacion": 0,
+      "comentario": ""
+    },
+    {
+      "jugadorId": "JUG-3",
+      "asistio": "faltó",
+      "evaluacion": 0,
+      "comentario": ""
+    }
+  ],
+  "equipoConvocadoId": "EQ-1"
+}]}
