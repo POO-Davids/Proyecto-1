@@ -71,7 +71,16 @@ public class PersistenciaJugadores extends Persistencia {
 				? new JugadorIndividual(id, usuario, json.getString("disciplina"), json.getString("nivel"), json.getFloat("elo"))
 				: new JugadorConjunto(id, usuario, json.getString("posicion"), json.getInt("camiseta"), json.getString("equipoId"),
 						json.getString("deporte"));
-		jugador.suspender(json.getInt("partidosSuspendido"));
+		int partidos = json.getInt("partidosSuspendido");
+
+		if (partidos < 0) {
+			throw new PersistenciaException(
+					"Los partidos de suspension no pueden ser negativos");
+		}
+
+		if (partidos > 0) {
+			jugador.suspender(partidos);
+		}
 		for (int i = 0; i < json.getInt("amonestaciones"); i++) {
 			jugador.aumentarAmonestaciones();
 		}

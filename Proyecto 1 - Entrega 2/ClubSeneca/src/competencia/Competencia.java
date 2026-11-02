@@ -14,7 +14,7 @@ import excepciones.ElementoNoEncontradoException;
 import excepciones.MarcadorInvalidoException;
 import excepciones.RequisitosInscripcionException;
 import partidos.PartidoCompetencia;
-
+import java.util.List;
 public abstract class Competencia {
 
 	protected String idCompetencia;

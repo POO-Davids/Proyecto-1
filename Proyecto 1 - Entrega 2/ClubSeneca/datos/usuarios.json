@@ -7,6 +7,7 @@
       "username": "admin"
     },
     {
+      "turnosPorFecha": [],
       "tipo": "Entrenador",
       "password": "1234",
       "bebidasSinConsumir": [],
@@ -42,6 +43,7 @@
       "username": "mario"
     },
     {
+      "turnosPorFecha": [],
       "tipo": "Entrenador",
       "password": "1234",
       "bebidasSinConsumir": [],
@@ -77,6 +79,7 @@
       "username": "lucia"
     },
     {
+      "turnosPorFecha": [],
       "tipo": "Entrenador",
       "password": "1234",
       "bebidasSinConsumir": [],
@@ -112,6 +115,7 @@
       "username": "jorge"
     },
     {
+      "turnosPorFecha": [],
       "tipo": "Fisioterapeuta",
       "password": "1234",
       "bebidasSinConsumir": [],
@@ -147,6 +151,7 @@
       "username": "sara"
     },
     {
+      "turnosPorFecha": [],
       "tipo": "Fisioterapeuta",
       "password": "1234",
       "bebidasSinConsumir": [],
@@ -570,6 +575,7 @@
     }
   ],
   "solicitudes": [{
+    "fecha": null,
     "estado": "pendiente",
     "empleado": "tomas",
     "idSolicitud": "SOL-1",
