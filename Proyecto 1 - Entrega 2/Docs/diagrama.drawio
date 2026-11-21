@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="AUu13LldjZzOv2zFvy9V-60" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;swimlaneFillColor=#B9E0A5;fillColor=default;strokeColor=#9673a6;" value="ClubSeneca" vertex="1">
-          <mxGeometry height="3733" width="4190" x="-1778" y="-405" as="geometry" />
+          <mxGeometry height="3733" width="4319" x="-1778" y="-405" as="geometry" />
         </mxCell>
         <mxCell id="ovzdxZv0leLWxdMHsOW0-1" parent="AUu13LldjZzOv2zFvy9V-60" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;swimlaneFillColor=light-dark(#FFF2CC,#FFE599);" value="Torneo" vertex="1">
           <mxGeometry height="804" width="1530" x="2624" y="2827" as="geometry" />
@@ -19,6 +19,9 @@
           <mxGeometry relative="1" x="-0.3311" as="geometry">
             <mxPoint x="8" y="-12" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-30" edge="1" parent="ovzdxZv0leLWxdMHsOW0-1" source="ovzdxZv0leLWxdMHsOW0-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Ip0eGZJAdAPlAE2HpGAw-28">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ovzdxZv0leLWxdMHsOW0-4" parent="ovzdxZv0leLWxdMHsOW0-1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TorneoIndividual&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- nivel: String&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getNivel()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ agregarJugador()&lt;/p&gt;" vertex="1">
           <mxGeometry height="146" width="300" x="412" y="380" as="geometry" />
@@ -40,7 +43,7 @@
         <mxCell id="ovzdxZv0leLWxdMHsOW0-13" edge="1" parent="ovzdxZv0leLWxdMHsOW0-1" source="ovzdxZv0leLWxdMHsOW0-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="ovzdxZv0leLWxdMHsOW0-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ovzdxZv0leLWxdMHsOW0-14" connectable="0" parent="ovzdxZv0leLWxdMHsOW0-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Torneos" vertex="1">
+        <mxCell id="ovzdxZv0leLWxdMHsOW0-14" connectable="0" parent="ovzdxZv0leLWxdMHsOW0-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="torneos" vertex="1">
           <mxGeometry relative="1" x="-0.4058" y="-1" as="geometry">
             <mxPoint x="11" y="-4" as="offset" />
           </mxGeometry>
@@ -56,8 +59,82 @@
         <mxCell id="Ip0eGZJAdAPlAE2HpGAw-14" edge="1" parent="ovzdxZv0leLWxdMHsOW0-1" source="Ip0eGZJAdAPlAE2HpGAw-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;endSize=16;" target="ovzdxZv0leLWxdMHsOW0-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-13" parent="ovzdxZv0leLWxdMHsOW0-1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TorneoIndividualDobles&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- nivel: String&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getNivel()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ agregarJugador()&lt;/p&gt;" vertex="1">
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-16" edge="1" parent="ovzdxZv0leLWxdMHsOW0-1" source="Ip0eGZJAdAPlAE2HpGAw-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Ip0eGZJAdAPlAE2HpGAw-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-17" connectable="0" parent="Ip0eGZJAdAPlAE2HpGAw-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="equipos" vertex="1">
+          <mxGeometry relative="1" x="-0.25" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-18" connectable="0" parent="Ip0eGZJAdAPlAE2HpGAw-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.6" y="3" as="geometry">
+            <mxPoint x="10" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-13" parent="ovzdxZv0leLWxdMHsOW0-1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TorneoIndividualDobles&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- nivel: String&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getNivel()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ agregarEquipo()&lt;/p&gt;" vertex="1">
           <mxGeometry height="146" width="300" x="412" y="588" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-29" edge="1" parent="ovzdxZv0leLWxdMHsOW0-1" source="Ip0eGZJAdAPlAE2HpGAw-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Ip0eGZJAdAPlAE2HpGAw-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-15" parent="ovzdxZv0leLWxdMHsOW0-1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;EquipoDoblesTorneo&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- deporte: String&lt;/p&gt;&amp;nbsp;- idEquipo: String&lt;div&gt;- numeroInscritos: int = 2&lt;/div&gt;&lt;div&gt;- puntuacion: int&lt;br&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getDeportel()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ agregarJugador()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getIdEquipo(): String&lt;/p&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="146" width="300" x="792" y="588" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-28" parent="ovzdxZv0leLWxdMHsOW0-1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;JugadorIndividualTorneo&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- username: String&lt;/p&gt;&amp;nbsp;- deporte: String&lt;div&gt;-- esJugador: Boolean&lt;/div&gt;&lt;div&gt;&amp;nbsp;- esExterno: Boolean&lt;/div&gt;&lt;div&gt;&amp;nbsp;- puntuacion: int&lt;/div&gt;&lt;div&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;&lt;br&gt;&lt;/p&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="146" width="300" x="792" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="fzj7ooatxF9rwt6b5csG-86" parent="AUu13LldjZzOv2zFvy9V-60" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;swimlaneFillColor=light-dark(#FFF2CC,#FFE599);" value="Equipos" vertex="1">
+          <mxGeometry height="651" width="650" x="1845" y="2572" as="geometry" />
+        </mxCell>
+        <mxCell id="fzj7ooatxF9rwt6b5csG-87" edge="1" parent="fzj7ooatxF9rwt6b5csG-86" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.006;entryY=0.442;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="423" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fzj7ooatxF9rwt6b5csG-88" connectable="0" parent="fzj7ooatxF9rwt6b5csG-87" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=none;" value="Empleado" vertex="1">
+          <mxGeometry relative="1" x="-0.3311" as="geometry">
+            <mxPoint x="8" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fzj7ooatxF9rwt6b5csG-89" edge="1" parent="fzj7ooatxF9rwt6b5csG-86" source="fzj7ooatxF9rwt6b5csG-92" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;endArrow=open;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=none;" target="fzj7ooatxF9rwt6b5csG-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fzj7ooatxF9rwt6b5csG-90" connectable="0" parent="fzj7ooatxF9rwt6b5csG-89" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="equipos" vertex="1">
+          <mxGeometry relative="1" x="-0.2062" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fzj7ooatxF9rwt6b5csG-91" connectable="0" parent="fzj7ooatxF9rwt6b5csG-89" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=light-dark(transparent,#FFFFFF);" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.5357" y="1" as="geometry">
+            <mxPoint x="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fzj7ooatxF9rwt6b5csG-92" parent="fzj7ooatxF9rwt6b5csG-86" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CentralEquipos&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- idEquipos: String[]&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ inscribirJugador(jugador: Jugador, equipo: Equipo): void&lt;br&gt;+ quitarJugador(jugador: Jugador, equipo: Equipo): void&lt;br&gt;+ crearEquipo(nombre: String, deporte: String, categoria: String, cupo: int): void&lt;br&gt;+ quitarEquipo(idEquipo: String): void&lt;br&gt;+ getEquipo(idEquipo: String): Equipo&lt;br&gt;+ existeEquipo(nombre: String, deporte: String, categoria: String): Boolean&lt;br&gt;+ getEquiposPorDeporte(deporte: String): List&amp;lt;Equipo&amp;gt;&lt;br&gt;+ getEquipoAnonimo(): Equipo&lt;br&gt;- generarId(): String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="203" width="420" x="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fzj7ooatxF9rwt6b5csG-93" parent="fzj7ooatxF9rwt6b5csG-86" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Equipo&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- nombre: String&lt;br&gt;- deporte: String&lt;br&gt;- categoria: String&lt;br&gt;- cupo: int&lt;br&gt;- jugadores: String[]&lt;br&gt;- idEquipo: String&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getIdEquipo(): String&lt;br&gt;+ getNombre(): String&lt;br&gt;+ getDeporte(): String&lt;br&gt;+ getCategoria(): String&lt;br&gt;+ getCupo(): int&lt;br&gt;+ getJugadoresIds(): String[]&lt;br&gt;+ tieneCupo(): Boolean&lt;br&gt;+ camisetaDisponible(camiseta: int): Boolean&lt;br&gt;+ inscribirJugador(jugador: Jugador): void&lt;br&gt;+ quitarJugador(jugador: Jugador): void&lt;br&gt;+ agregarAmonestacion(idJugador: String, amonestacion: Amonestacion): void&lt;br&gt;+ getAmonestaciones(idJugador: String): List&amp;lt;Amonestacion&amp;gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="318" width="420" x="120" y="303" as="geometry" />
+        </mxCell>
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-19" edge="1" parent="AUu13LldjZzOv2zFvy9V-60" source="ovzdxZv0leLWxdMHsOW0-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.918;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="fzj7ooatxF9rwt6b5csG-93">
+          <mxGeometry relative="1" x="0.3214" as="geometry">
+            <Array as="points">
+              <mxPoint x="4183" y="2992" />
+              <mxPoint x="4183" y="3696" />
+              <mxPoint x="2603" y="3696" />
+              <mxPoint x="2603" y="3166.9" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-20" connectable="0" parent="Ip0eGZJAdAPlAE2HpGAw-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="equipos" vertex="1">
+          <mxGeometry relative="1" x="0.1282" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-21" connectable="0" parent="Ip0eGZJAdAPlAE2HpGAw-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.9884" y="1" as="geometry">
+            <mxPoint x="-8" y="11" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="fzj7ooatxF9rwt6b5csG-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;swimlaneFillColor=light-dark(#FFF2CC,#FFE599);" value="Usuarios" vertex="1">
           <mxGeometry height="886" width="1300" x="-582" y="675" as="geometry" />
@@ -65,7 +142,7 @@
         <mxCell id="fzj7ooatxF9rwt6b5csG-2" parent="fzj7ooatxF9rwt6b5csG-1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CentralUsuarios&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ agregarUsuario(usuario: Usuario): void&lt;br&gt;+ autenticar(username: String, password: String): Usuario&lt;br&gt;+ getUsuario(username: String): Usuario&lt;br&gt;+ getEmpleados(tipo: String): List&amp;lt;Empleado&amp;gt;&lt;br&gt;+ asignarTurno(empleadoUsername: String, fecha: LocalDate, turno: Boolean[]): void&lt;br&gt;+ solicitarCambioTurno(empleadoUsername: String, fecha: LocalDate, horario: Boolean[]): void&lt;br&gt;+ getSolicitudesPendientes(): List&amp;lt;SolicitudCambioTurno&amp;gt;&lt;br&gt;+ aprobarSolicitudCambioTurno(idSolicitud: String): Boolean&lt;br&gt;+ rechazarSolicitudCambioTurno(idSolicitud: String): void&lt;br&gt;+ compartirCodigoDescuento(socioUsername: String, empleadoUsername: String): void&lt;br&gt;+ acumularPuntos(username: String, puntos: float): void&lt;br&gt;+ redimirPuntos(username: String, puntos: float): void&lt;br&gt;+ existeUsuario(username: String): Boolean&lt;br&gt;- generarId(): String&lt;/p&gt;" vertex="1">
           <mxGeometry height="290" width="460" x="20" y="260" as="geometry" />
         </mxCell>
-        <mxCell id="fzj7ooatxF9rwt6b5csG-3" parent="fzj7ooatxF9rwt6b5csG-1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Socio&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- nombre: String&lt;br&gt;- edad: String&lt;br&gt;- codigoDescuentoDado: String&lt;br&gt;- puntosFidelidad: float&lt;br&gt;- jugandoComo: String[]&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getPuntosFidelidad(): float&lt;br&gt;+ setCodigoDescuento(codigo: String): void&lt;br&gt;+ getCodigoDescuentoDado(): String&lt;br&gt;+ setPuntosFidelidad(puntos: float): void&lt;br&gt;+ getNombre(): String&lt;br&gt;+ getEdad(): String&lt;br&gt;+ getJugandoComo(): String[]&lt;br&gt;+ agregarJugador(idJugador: String): void&lt;br&gt;+ quitarJugador(idJugador: String): void&lt;br&gt;+ getTipo(): String&lt;/p&gt;" vertex="1">
+        <mxCell id="fzj7ooatxF9rwt6b5csG-3" parent="fzj7ooatxF9rwt6b5csG-1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Socio&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- nombre: String&lt;br&gt;- edad: String&lt;br&gt;- codigosDescuento: String[]&lt;br&gt;- puntosFidelidad: float&lt;br&gt;- jugandoComo: String[]&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getPuntosFidelidad(): float&lt;br&gt;+ setCodigoDescuento(codigo: String): void&lt;br&gt;+ getCodigoDescuentoDado(): String&lt;br&gt;+ setPuntosFidelidad(puntos: float): void&lt;br&gt;+ getNombre(): String&lt;br&gt;+ getEdad(): String&lt;br&gt;+ getJugandoComo(): String[]&lt;br&gt;+ agregarJugador(idJugador: String): void&lt;br&gt;+ quitarJugador(idJugador: String): void&lt;br&gt;+ getTipo(): String&lt;/p&gt;" vertex="1">
           <mxGeometry height="261" width="340" x="920" y="260" as="geometry" />
         </mxCell>
         <mxCell id="fzj7ooatxF9rwt6b5csG-4" parent="fzj7ooatxF9rwt6b5csG-1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&lt;i&gt;Usuario&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;# username: String&lt;br&gt;# password: String&lt;br&gt;# bebidasSinConsumir: List&amp;lt;Bebida&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ verificarLogin(username, password): (Boolean, Int)&lt;br&gt;+ getUsername(): String&lt;br&gt;+ getTipo(): String&lt;br&gt;+ agregarBebidaSinConsumir(bebida: Bebida): void&lt;br&gt;+ consumirBebida(nombre: String): void&lt;br&gt;+ tieneBebidaCaliente(): Boolean&lt;/p&gt;" vertex="1">
@@ -142,7 +219,7 @@
         <mxCell id="cs-e-admin" edge="1" parent="fzj7ooatxF9rwt6b5csG-1" source="cs-admin" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;fontSize=12;exitX=0.4;exitY=1;entryX=0.293;entryY=0;edgeStyle=none;" target="fzj7ooatxF9rwt6b5csG-4" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ovzdxZv0leLWxdMHsOW0-7" parent="fzj7ooatxF9rwt6b5csG-1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b style=&quot;&quot;&gt;Externo&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- esEstudiante: Boolean&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getEsEstudiante(): Boolean&lt;/p&gt;" vertex="1">
+        <mxCell id="ovzdxZv0leLWxdMHsOW0-7" parent="fzj7ooatxF9rwt6b5csG-1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b style=&quot;&quot;&gt;Externo&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- esEstudiante: Boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- codigosDescuento: String[]&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getEsEstudiante(): Boolean&lt;/p&gt;" vertex="1">
           <mxGeometry height="174" width="300" x="920" y="33" as="geometry" />
         </mxCell>
         <mxCell id="ovzdxZv0leLWxdMHsOW0-9" edge="1" parent="fzj7ooatxF9rwt6b5csG-1" source="ovzdxZv0leLWxdMHsOW0-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.997;entryY=0.109;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;endArrow=block;endFill=0;endSize=16;" target="fzj7ooatxF9rwt6b5csG-4">
@@ -424,38 +501,6 @@
         <mxCell id="fzj7ooatxF9rwt6b5csG-85" edge="1" parent="fzj7ooatxF9rwt6b5csG-56" source="fzj7ooatxF9rwt6b5csG-84" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;fontSize=12;exitX=0;exitY=0.5;entryX=1;entryY=0.446;edgeStyle=none;" target="fzj7ooatxF9rwt6b5csG-62" value="">
           <mxGeometry relative="1" width="160" as="geometry" />
         </mxCell>
-        <mxCell id="fzj7ooatxF9rwt6b5csG-86" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;swimlaneFillColor=light-dark(#FFF2CC,#FFE599);" value="Equipos" vertex="1">
-          <mxGeometry height="651" width="650" x="68" y="2167" as="geometry" />
-        </mxCell>
-        <mxCell id="fzj7ooatxF9rwt6b5csG-87" edge="1" parent="fzj7ooatxF9rwt6b5csG-86" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.006;entryY=0.442;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;entryPerimeter=0;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="210" y="423" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="fzj7ooatxF9rwt6b5csG-88" connectable="0" parent="fzj7ooatxF9rwt6b5csG-87" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=none;" value="Empleado" vertex="1">
-          <mxGeometry relative="1" x="-0.3311" as="geometry">
-            <mxPoint x="8" y="-12" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="fzj7ooatxF9rwt6b5csG-89" edge="1" parent="fzj7ooatxF9rwt6b5csG-86" source="fzj7ooatxF9rwt6b5csG-92" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;endArrow=open;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=none;" target="fzj7ooatxF9rwt6b5csG-93">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="fzj7ooatxF9rwt6b5csG-90" connectable="0" parent="fzj7ooatxF9rwt6b5csG-89" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="equipos" vertex="1">
-          <mxGeometry relative="1" x="-0.2062" y="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="fzj7ooatxF9rwt6b5csG-91" connectable="0" parent="fzj7ooatxF9rwt6b5csG-89" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=light-dark(transparent,#FFFFFF);" value="*" vertex="1">
-          <mxGeometry relative="1" x="0.5357" y="1" as="geometry">
-            <mxPoint x="7" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="fzj7ooatxF9rwt6b5csG-92" parent="fzj7ooatxF9rwt6b5csG-86" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CentralEquipos&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- idEquipos: String[]&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ inscribirJugador(jugador: Jugador, equipo: Equipo): void&lt;br&gt;+ quitarJugador(jugador: Jugador, equipo: Equipo): void&lt;br&gt;+ crearEquipo(nombre: String, deporte: String, categoria: String, cupo: int): void&lt;br&gt;+ quitarEquipo(idEquipo: String): void&lt;br&gt;+ getEquipo(idEquipo: String): Equipo&lt;br&gt;+ existeEquipo(nombre: String, deporte: String, categoria: String): Boolean&lt;br&gt;+ getEquiposPorDeporte(deporte: String): List&amp;lt;Equipo&amp;gt;&lt;br&gt;+ getEquipoAnonimo(): Equipo&lt;br&gt;- generarId(): String&lt;/p&gt;" vertex="1">
-          <mxGeometry height="203" width="420" x="120" y="40" as="geometry" />
-        </mxCell>
-        <mxCell id="fzj7ooatxF9rwt6b5csG-93" parent="fzj7ooatxF9rwt6b5csG-86" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Equipo&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- nombre: String&lt;br&gt;- deporte: String&lt;br&gt;- categoria: String&lt;br&gt;- cupo: int&lt;br&gt;- jugadores: String[]&lt;br&gt;- idEquipo: String&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getIdEquipo(): String&lt;br&gt;+ getNombre(): String&lt;br&gt;+ getDeporte(): String&lt;br&gt;+ getCategoria(): String&lt;br&gt;+ getCupo(): int&lt;br&gt;+ getJugadoresIds(): String[]&lt;br&gt;+ tieneCupo(): Boolean&lt;br&gt;+ camisetaDisponible(camiseta: int): Boolean&lt;br&gt;+ inscribirJugador(jugador: Jugador): void&lt;br&gt;+ quitarJugador(jugador: Jugador): void&lt;br&gt;+ agregarAmonestacion(idJugador: String, amonestacion: Amonestacion): void&lt;br&gt;+ getAmonestaciones(idJugador: String): List&amp;lt;Amonestacion&amp;gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="318" width="420" x="120" y="303" as="geometry" />
-        </mxCell>
         <mxCell id="fzj7ooatxF9rwt6b5csG-94" edge="1" parent="1" source="fzj7ooatxF9rwt6b5csG-93" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;endArrow=open;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;edgeStyle=none;" target="fzj7ooatxF9rwt6b5csG-54">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -503,7 +548,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="fzj7ooatxF9rwt6b5csG-102" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;swimlaneFillColor=light-dark(#FFF2CC,#FFE599);" value="Partidos" vertex="1">
-          <mxGeometry height="688" width="1530" x="840" y="692" as="geometry" />
+          <mxGeometry height="688" width="1643" x="840" y="692" as="geometry" />
         </mxCell>
         <mxCell id="fzj7ooatxF9rwt6b5csG-103" edge="1" parent="fzj7ooatxF9rwt6b5csG-102" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.006;entryY=0.442;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;entryPerimeter=0;">
           <mxGeometry relative="1" as="geometry">
@@ -529,7 +574,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="fzj7ooatxF9rwt6b5csG-108" parent="fzj7ooatxF9rwt6b5csG-102" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Partidos&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ programarPartidoInterno(equipo1: Equipo, equipo2: Equipo, fecha: LocalDateTime, habilitados1: String[], habilitados2: String[]): PartidoInterno&lt;br&gt;+ crearPartidoCompetencia(competencia: Competencia, fecha: LocalDateTime, equipoAfuera: EquipoAfueraCompetencia, escenario: String, habilitados: String[]): PartidoCompetencia&lt;br&gt;+ crearPartidoPractica(reservador: String, reserva: Reserva, equipo1: String[], equipo2: String[], disciplina: String): PartidoPractica&lt;br&gt;+ getPartido(idPartido: String): Partido&lt;br&gt;+ getPartidosEntre(inicio: LocalDate, fin: LocalDate): List&amp;lt;Partido&amp;gt;&lt;br&gt;+ cancelarPartidoPorReserva(idReserva: String): void&lt;br&gt;+ reemplazarEquipoEnHistorial(idEquipo: String, anonimo: Equipo): void&lt;br&gt;+ reemplazarJugadorEnHistorial(idJugador: String, anonimo: Jugador): void&lt;br&gt;- verificarMinimoJugadores(deporte: String, habilitados: String[]): Boolean&lt;br&gt;+ registrarMarcador(idPartido: String, puntuacion1: int, puntuacion2: int): void&lt;br&gt;+ registrarAmonestacion(idPartido: String, jugador: Jugador, amonestacion: Amonestacion): void&lt;br&gt;- verificarJugadoresHabilitados(equipo: Equipo, habilitados: String[]): Boolean&lt;br&gt;- aplicarSuspensiones(partido: Partido): void&lt;br&gt;- generarId(): String&lt;/p&gt;" vertex="1">
-          <mxGeometry height="304" width="620" x="760" y="40" as="geometry" />
+          <mxGeometry height="304" width="620" x="894" y="15" as="geometry" />
         </mxCell>
         <mxCell id="fzj7ooatxF9rwt6b5csG-109" parent="fzj7ooatxF9rwt6b5csG-102" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&lt;i&gt;Partido&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;# idPartido: String&lt;br&gt;# fecha: LocalDateTime&lt;br&gt;# deporte: String&lt;br&gt;# categoria: String&lt;br&gt;# cerrado: Boolean&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getIdPartido(): String&lt;br&gt;+ getFecha(): LocalDateTime&lt;br&gt;+ getDeporte(): String&lt;br&gt;+ getCategoria(): String&lt;br&gt;+ getCerrado(): Boolean&lt;br&gt;+ setCerrado(): void&lt;br&gt;+ agregarEstadistica(estadistica: Estadistica): void&lt;br&gt;+ getEstadisticas(): List&amp;lt;Estadistica&amp;gt;&lt;br&gt;+ getResumen(): String&lt;/p&gt;" vertex="1">
           <mxGeometry height="246" width="340" x="330" y="40" as="geometry" />
@@ -563,9 +608,21 @@
           <mxGeometry relative="1" width="160" as="geometry">
             <Array as="points">
               <mxPoint x="1040" y="345" />
+              <mxPoint x="1037" y="344" />
               <mxPoint x="500" y="345" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-23" edge="1" parent="fzj7ooatxF9rwt6b5csG-102" source="Ip0eGZJAdAPlAE2HpGAw-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.416;exitY=0.02;exitDx=0;exitDy=0;exitPerimeter=0;endArrow=block;endFill=0;endSize=16;" target="fzj7ooatxF9rwt6b5csG-109">
+          <mxGeometry relative="1" x="0.0087" as="geometry">
+            <Array as="points">
+              <mxPoint x="1404.1" y="345" />
+              <mxPoint x="500" y="345" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-22" parent="fzj7ooatxF9rwt6b5csG-102" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PartidoTorneo&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- torneoId: String&lt;br&gt;- modalidad: String&lt;br&gt;- idContrincante1: String&lt;br&gt;- idContrincante2: String[]&lt;br&gt;- puntuacionContrincante1: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- puntuacionContrincante2: int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;&lt;br&gt;+ getResumen(): String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="246" width="380" x="1246" y="404" as="geometry" />
         </mxCell>
         <mxCell id="fzj7ooatxF9rwt6b5csG-116" edge="1" parent="1" source="fzj7ooatxF9rwt6b5csG-110" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;exitX=0;exitY=0.75;entryX=1;entryY=0.8;edgeStyle=orthogonalEdgeStyle;" target="fzj7ooatxF9rwt6b5csG-93">
           <mxGeometry relative="1" as="geometry">
@@ -633,15 +690,15 @@
         <mxCell id="fzj7ooatxF9rwt6b5csG-126" edge="1" parent="1" source="fzj7ooatxF9rwt6b5csG-111" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;exitX=0.95;exitY=1;entryX=1;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="fzj7ooatxF9rwt6b5csG-64">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1630" y="1401" />
-              <mxPoint x="2362" y="1401" />
+              <mxPoint x="1630" y="1416" />
+              <mxPoint x="2362" y="1416" />
               <mxPoint x="2362" y="2175" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="fzj7ooatxF9rwt6b5csG-127" connectable="0" parent="fzj7ooatxF9rwt6b5csG-126" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=none;" value="equipoPropio" vertex="1">
-          <mxGeometry relative="1" x="0.8" y="-10" as="geometry">
-            <mxPoint as="offset" />
+          <mxGeometry relative="1" x="0.8001" y="-10" as="geometry">
+            <mxPoint x="-35" y="-23" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="fzj7ooatxF9rwt6b5csG-128" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;swimlaneFillColor=light-dark(#FFF2CC,#FFE599);" value="Entrenamientos" vertex="1">
@@ -991,17 +1048,20 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="AUu13LldjZzOv2zFvy9V-66" edge="1" parent="1" source="fzj7ooatxF9rwt6b5csG-112" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;exitX=1;exitY=0.11;entryX=0.36;entryY=1;edgeStyle=orthogonalEdgeStyle;" target="fzj7ooatxF9rwt6b5csG-158">
-          <mxGeometry relative="1" as="geometry">
+        <mxCell id="AUu13LldjZzOv2zFvy9V-66" edge="1" parent="1" source="fzj7ooatxF9rwt6b5csG-112" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;exitX=0.716;exitY=-0.008;entryX=0.36;entryY=1;edgeStyle=orthogonalEdgeStyle;exitDx=0;exitDy=0;exitPerimeter=0;" target="fzj7ooatxF9rwt6b5csG-158">
+          <mxGeometry relative="1" x="0.0296" as="geometry">
             <Array as="points">
-              <mxPoint x="2390" y="1131.06" />
+              <mxPoint x="1975" y="1094" />
+              <mxPoint x="1975" y="1067" />
+              <mxPoint x="2243" y="1067" />
+              <mxPoint x="2390" y="1067" />
               <mxPoint x="2390" y="147" />
               <mxPoint x="1760" y="147" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="AUu13LldjZzOv2zFvy9V-67" connectable="0" parent="AUu13LldjZzOv2zFvy9V-66" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="reserva" vertex="1">
-          <mxGeometry relative="1" x="0.85" y="-10" as="geometry">
+          <mxGeometry relative="1" x="0.8542" y="-10" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -1630,18 +1690,17 @@
             <mxPoint x="39" y="324" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cs-c-partidos" edge="1" parent="1" source="cs-central" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;rounded=0;fontSize=12;labelBackgroundColor=none;exitX=0.81;exitY=0;entryX=0.5;entryY=0;edgeStyle=orthogonalEdgeStyle;" target="fzj7ooatxF9rwt6b5csG-108" value="">
-          <mxGeometry relative="1" x="0.0002" as="geometry">
+        <mxCell id="cs-c-partidos" edge="1" parent="1" source="cs-central" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;rounded=0;fontSize=12;labelBackgroundColor=none;exitX=0.81;exitY=0;edgeStyle=orthogonalEdgeStyle;" target="fzj7ooatxF9rwt6b5csG-108" value="">
+          <mxGeometry relative="1" x="0.083" as="geometry">
             <Array as="points">
               <mxPoint x="-1003" y="-336" />
               <mxPoint x="805" y="-336" />
               <mxPoint x="805" y="716.1" />
-              <mxPoint x="1910" y="716.1" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="cs-c-partidos-lbl" connectable="0" parent="cs-c-partidos" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=none;" value="partidos" vertex="1">
-          <mxGeometry relative="1" x="0.8" y="-10" as="geometry">
+          <mxGeometry relative="1" x="0.9487" y="-10" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -1932,6 +1991,24 @@
         <mxCell id="cs-d-pers-throws-lbl" connectable="0" parent="cs-d-pers-throws" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=none;" value="&amp;laquo;throws&amp;raquo;" vertex="1">
           <mxGeometry relative="1" y="-10" as="geometry">
             <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-24" edge="1" parent="1" source="ovzdxZv0leLWxdMHsOW0-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.005;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Ip0eGZJAdAPlAE2HpGAw-22">
+          <mxGeometry relative="1" x="-0.0548" as="geometry">
+            <Array as="points">
+              <mxPoint x="2515.8" y="2486.5" />
+              <mxPoint x="2515.8" y="1231.3" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-25" connectable="0" parent="Ip0eGZJAdAPlAE2HpGAw-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="partidos" vertex="1">
+          <mxGeometry relative="1" x="0.2715" y="1" as="geometry">
+            <mxPoint x="-5" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ip0eGZJAdAPlAE2HpGAw-26" connectable="0" parent="Ip0eGZJAdAPlAE2HpGAw-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="*" vertex="1">
+          <mxGeometry relative="1" x="0.9713" as="geometry">
+            <mxPoint x="-30" y="13" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
